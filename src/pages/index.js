@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { findDOMNode } from 'react-dom';
 import { Route } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown'
 import Menu from '../components/Menu'

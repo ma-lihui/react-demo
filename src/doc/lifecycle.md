@@ -1,11 +1,3 @@
-# Lifecycle
+# 生命周期
 
-Changes are automatically rendered as you type.
-
-
-## More info?
-
-
----------------
-
-A component by [VaffelNinja](http://vaffel.ninja) / Espen Hovlandsdal
+![react lifecycl](http://img.blog.csdn.net/20151119120659797 "react lifecycle")

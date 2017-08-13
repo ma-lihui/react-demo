@@ -21,11 +21,14 @@ body {
   border-radius: 4px;
   padding: 24px 0;
   margin: 24px 48px;
-  display: block;
   position: relative;
+  min-height: calc(100vh - 300px);
+  display: block;
 }
 .main{
   display: flex;
+  height: 100%;
+  box-sizing: border-box;
 }
 .content{
   float: left;

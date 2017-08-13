@@ -13,7 +13,7 @@ export default class Menu extends Component{
         const { menuList, preUrl, match } = this.props;
         this.menuList = menuList.map( menu =>
             <li key={menu.url}>
-                <NavLink exact={menu.exact} to={preUrl + menu.url}>{menu.name}</NavLink>
+                <NavLink exact={menu.exact} to={preUrl + menu.url}>{menu.name}<span className="subname">{menu.subname}</span></NavLink>
             </li>
         );
         return (

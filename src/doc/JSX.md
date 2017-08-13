@@ -1,34 +1,36 @@
 # JSX
-
-上一节的代码， HTML 语言直接写在 JavaScript 语言之中，不加任何引号，这就是 JSX 的语法，它允许 HTML 与 JavaScript 的混写。
-JSX 是一个看起来很像 XML 的 JavaScript 语法扩展。
-我们不需要一定使用 JSX，但它有以下优点：
-* JSX 执行更快，因为它在编译为 JavaScript 代码后进行了优化。
-* 它是类型安全的，在编译过程中就能发现错误。
-* 使用 JSX 编写模板更加简单快速。
-
-## HTML block below
-
-> This blockquote will change based on the HTML settings above.
-
-
-## How about some code?
 ```js
-var React = require('react');
-var Markdown = require('react-markdown');
+const element = <h1>Hello, world!</h1>;
+```
+像这样将 HTML 语言直接写在 JavaScript 语言之中，这就是 JSX 的语法，它允许 HTML 与 JavaScript 的混写。
+JSX 是一个看起来很像 XML 的 JavaScript 语法扩展。
 
-React.render(
-    <Markdown source="# Your markdown here" />,
-    document.getElementById('content')
+## 在JSX中嵌入JS表达式
+只需要用`{}`将JS表达式包起来
+```js
+const name = 'world';
+const element = (
+  <h1>
+    Hello, {name}!
+  </h1>
 );
 ```
-
-Pretty neat, eh?
-
-## More info?
-
-Read usage information and more on [GitHub](//github.com/rexxars/react-markdown)
-
----------------
-
-A component by [VaffelNinja](http://vaffel.ninja) / Espen Hovlandsdal
+## JSX实质就是JS表达式
+JSX实际上是语法糖,Babel通过调用`React.createElement()`来编译JSX。
+下面两种写法是等价的
+```js
+const element = (
+  <h1 className="greeting">
+    Hello, world!
+  </h1>
+);
+```
+```js
+const element = React.createElement(
+  'h1',
+  {className: 'greeting'},
+  'Hello, world!'
+);
+```
+> **注意：**
+> 在JSX中`class`属性应该用`className`替代

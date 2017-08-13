@@ -10,12 +10,13 @@ export const INDEX_MENU = [
     {name:'简介',url:'/introduce'},
     {name:'hello world',url:'/helloWorld'},
     {name:'JSX',url:'/JSX'},
-    {name:'Component',url:'/component'},
-    {name:'Lifecycle',url:'/lifecycle'},
+    {name:'组件',subname:'component',url:'/component'},
+    {name:'生命周期',subname:'lifecycle',url:'/lifecycle'},
+    {name:'Redux',url:'/redux'},
 ];
 
 export const DEMO_MENU = [
     {name:'hello world',url:'/helloWorld'},
-    {name:'demo2',url:'/demo2'},
+    {name:'message',url:'/message'},
     {name:'demo3',url:'/demo3'},
 ];
