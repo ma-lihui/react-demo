@@ -18,5 +18,6 @@ export const INDEX_MENU = [
 export const DEMO_MENU = [
     {name:'hello world',url:'/helloWorld'},
     {name:'message',url:'/message'},
-    {name:'demo3',url:'/demo3'},
+    {name:'clock',url:'/clock'},
+    {name:'lifecycle',url:'/lifecycle'},
 ];

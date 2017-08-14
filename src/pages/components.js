@@ -5,10 +5,7 @@ export default class Components extends Component {
     }
     render() {
         return (
-            <div>
-                <div className="main">
-                    <h2>Components</h2>
-                </div>
+            <div className="main">
             </div>
         );
     }

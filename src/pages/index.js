@@ -6,7 +6,7 @@ import { INDEX_MENU } from '../constant'
 import doc from '../doc'
 import '../css/markdown.css'
 import {  MarkdownPreview  } from 'react-marked-markdown';
-import markdowndStyle from '../../node_modules/highlight.js/styles/github-gist.css'
+import markdowndStyle from '../css/github-gist.css'
 
 class Content extends Component{
     constructor(props){
