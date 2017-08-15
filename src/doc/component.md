@@ -79,3 +79,5 @@ class Clock extends Component{
     }
 }
 ```
+## state
+React的组件都有自己的状态，这个内部状态使用state表示。通过调用`setState()`来改变`this.state`的值。

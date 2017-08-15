@@ -4,7 +4,6 @@ import Menu from '../components/Menu'
 import { DEMO_MENU } from '../constant'
 import HelloWorld from '../demo/helloWorld'
 import Message from '../demo/message'
-import Comment from '../demo/comment'
 import Lifecycle from '../demo/lifecycle'
 import Clock from '../demo/clock'
 export default class Demo extends Component {

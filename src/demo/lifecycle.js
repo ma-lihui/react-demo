@@ -63,7 +63,7 @@ export default class Lifecycle extends Component{
         super(props);
         this.state = {
             isMounted: false,
-            date:''
+            date:'Now time is ' + new Date().toLocaleTimeString()
         };
     }
     shouldComponentUpdate(nextProps, nextState) {

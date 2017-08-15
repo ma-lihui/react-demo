@@ -8,9 +8,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { NAV_HEADER } from'../constant'
 
 export default class Header extends Component{
-    constructor(props){
-        super(props);
-    }
+
     render(){
         const { nav } = this.props;
         const navList = nav.map( n =>

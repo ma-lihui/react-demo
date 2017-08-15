@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory'
 import 'whatwg-fetch'
 import Index from './pages/index';
