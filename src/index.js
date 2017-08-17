@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route ,Redirect} from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory'
 import 'whatwg-fetch'
 import Index from './pages/index';
@@ -20,7 +20,9 @@ ReactDOM.render((
         <div className="pager-wrapper">
             <Header nav={ NAV_HEADER }/>
             <div className="main-wrapper clear-fix">
-                <Route path="/" exact component={Index}/>
+                <Route path="/" exact render={() => (
+                    <Redirect to="/index"/>
+                )}/>
                 <Route path="/index" component={Index}/>
                 <Route path="/demo" component={Demo}/>
                 <Route path="/components" component={Components}/>

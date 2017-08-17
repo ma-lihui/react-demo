@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown'
 import Menu from '../components/Menu'
 import { INDEX_MENU } from '../constant'
@@ -51,6 +51,9 @@ export default class Index extends Component {
           <div className="main">
               <Menu menuList={ INDEX_MENU } preUrl={match.url}/>
               <div className="content">
+                  <Route path="/index" exact render={() => (
+                    <Redirect to={`/index${INDEX_MENU[0].url}`}/>
+                  )}/>
                   <Route path="/index/:nav" component={Content}/>
               </div>
           </div>
