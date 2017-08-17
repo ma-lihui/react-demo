@@ -12,6 +12,8 @@ export const INDEX_MENU = [
     {name:'JSX',url:'/JSX'},
     {name:'组件',subname:'component',url:'/component'},
     {name:'生命周期',subname:'lifecycle',url:'/lifecycle'},
+    {name:'Flux',url:'/flux'},
+    {name:'Flux VS Redux',url:'/fluxVsRedux'},
     {name:'Redux',url:'/redux'},
 ];
 
@@ -20,4 +22,6 @@ export const DEMO_MENU = [
     {name:'message',url:'/message'},
     {name:'clock',url:'/clock'},
     {name:'lifecycle',url:'/lifecycle'},
+    {name:'flux',url:'/fluxTab'},
+    {name:'redux',url:'/reduxTab'},
 ];

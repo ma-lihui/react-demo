@@ -6,6 +6,8 @@ import HelloWorld from '../demo/helloWorld'
 import Message from '../demo/message'
 import Lifecycle from '../demo/lifecycle'
 import Clock from '../demo/clock'
+import FluxTab from '../demo/fluxFiles/fluxTab'
+import ReduxTab from '../demo/reduxFiles/ReduxTab'
 export default class Demo extends Component {
     constructor(props){
         super(props);
@@ -23,6 +25,8 @@ export default class Demo extends Component {
                     <Route path={`${match.url}/message`} component={Message}/>
                     <Route path={`${match.url}/lifecycle`} component={Lifecycle}/>
                     <Route path={`${match.url}/clock`} component={Clock}/>
+                    <Route path={`${match.url}/fluxTab`} component={FluxTab}/>
+                    <Route path={`${match.url}/reduxTab`} component={ReduxTab}/>
                 </div>
             </div>
         );

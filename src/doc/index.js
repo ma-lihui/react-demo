@@ -8,5 +8,7 @@ import JSX from './JSX.md';
 import component from './component.md';
 import lifecycle from './lifecycle.md';
 import redux from './redux.md';
+import flux from './flux.md';
+import fluxVsRedux from './fluxVsRedux.md';
 
-export default {demo, introduce, helloWorld, JSX,component,lifecycle,redux}
+export default {demo, introduce, helloWorld, JSX,component,lifecycle,redux,flux,fluxVsRedux}
