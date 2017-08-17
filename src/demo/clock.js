@@ -12,7 +12,6 @@ export default class Clock extends Component{
             date:new Date().toLocaleTimeString()
         }
     }
-
     toggle(){
         if(this.state.toggle){
             clearInterval(this.timeId);
@@ -27,6 +26,9 @@ export default class Clock extends Component{
         this.setState({
             date: new Date().toLocaleTimeString()
         });
+    }
+    componentWillUnmount(){
+        clearInterval(this.timeId);
     }
     render(){
         return (
